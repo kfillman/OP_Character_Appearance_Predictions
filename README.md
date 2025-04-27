@@ -5,3 +5,5 @@ The model has a mean absolute error of 36.05 and an R-squared value of ~0.98, me
 In terms of feature selection the data only had name, chapter, episode, year (of chapter release), and notes. The final model used chapter and year as a predictor. Including a character's name in the model didn't affect mean absolute error, but did decrease the R-squared value to ~0.94. The accuracy within 50 episodes dropped to 91.99%. Using only chapter as a predictor brought the mean absolute error up to ~41.36 and the R-squared value down to 0.93. Most notably, the accuracy within 50 episodes was brought down to just 79.67%.
 
 TLDR: The chapter a character appears in the manga is not a good predictor of the anime episode in which they will appear. However, including the year and a buffer of 50 episodes in this model significantly improves the model performance.
+
+I also made a Tableau visualization that can be found [here](https://public.tableau.com/views/BountiesintheWorldofOnePiece/BountiesDashboard?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
